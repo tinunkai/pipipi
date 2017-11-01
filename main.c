@@ -8,17 +8,6 @@ int main(){
         return -1;
     }
     pinMode(LEDPIN,OUTPUT);
-    printf("\n");
-    printf("\n");
-    printf("********************************|\n");
-    printf("|       LED Blink               |\n");
-    printf("|  -----------------------      |\n");
-    printf("|                               |\n");
-    printf("|   LED connect to wiringPi# 0  |\n");
-    printf("|                               |\n");
-    printf("|   LED will blink at 500ms     |\n");
-    printf("|   OSOYOO.COM                  |\n");
-    printf("********************************|\n");
     while(1){
         for (int i = 0; i < 3; i++)
         {

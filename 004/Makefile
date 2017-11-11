@@ -1,2 +1,2 @@
 all:
-	sudo ./main.py
+	sudo ./peep.py

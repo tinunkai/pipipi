@@ -11,17 +11,18 @@ def setup():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(LEDPIN,GPIO.OUT,initial=GPIO.LOW)
 
-    p = GPIO.PWM(LEDPIN,100)
+    p = GPIO.PWM(LEDPIN, 100)
     p.start(0)
 
 def main():
+    internal = 0.01
     while True:
         for dc in range(0,101,1):
             p.ChangeDutyCycle(dc)
-            time.sleep(0.1)
+            time.sleep(internal)
         for dc in range(100,-1,-1):
             p.ChangeDutyCycle(dc)
-            time.sleep(0.1)
+            time.sleep(internal)
 
 def destroy():
     p.stop()

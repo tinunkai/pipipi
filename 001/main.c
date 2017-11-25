@@ -11,17 +11,17 @@ int main(){
     while(1){
         for (int i = 0; i < 3; i++)
         {
-            digitalWrite(LEDPIN,HIGH);
+            digitalWrite(LEDPIN, HIGH);
             delay(100);
-            digitalWrite(LEDPIN,LOW);
+            digitalWrite(LEDPIN, LOW);
             delay(100);
         }
         delay(400);
         for (int i = 0; i < 3; i++)
         {
-            digitalWrite(LEDPIN,HIGH);
+            digitalWrite(LEDPIN, HIGH);
             delay(500);
-            digitalWrite(LEDPIN,LOW);
+            digitalWrite(LEDPIN, LOW);
             delay(500);
         }
     }
